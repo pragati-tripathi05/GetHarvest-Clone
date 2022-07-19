@@ -85,5 +85,7 @@
 - SignUp : https://www.getharvest.com/signup
 - SignIn : https://id.getharvest.com/harvest/sign_in
 - Pricing : https://www.getharvest.com/pricing
+- Payment pages
+- Features Page
 
 ## Chakra or other libraries components to be used
