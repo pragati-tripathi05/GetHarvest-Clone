@@ -83,9 +83,10 @@
 
 - HomePage : https://www.getharvest.com/
 - SignUp : https://www.getharvest.com/signup
+  and (Google Signup) "You’re almost there!" Page
 - SignIn : https://id.getharvest.com/harvest/sign_in
 - Pricing : https://www.getharvest.com/pricing
 - Payment pages
-- Features Page
+- Features Page : https://www.getharvest.com/features
 
 ## Chakra or other libraries components to be used
