@@ -5,8 +5,8 @@ import NavbarMain from "./Components/NavbarMain";
 function App() {
   return (
     <div className="App">
-      <AllRoutes />
       <NavbarMain />
+      <AllRoutes />
     </div>
   );
 }
