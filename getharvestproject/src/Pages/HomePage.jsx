@@ -14,7 +14,7 @@ const HomePage = () => {
         <img
           width="50%"
           src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/1001-Harvest-Home-SPZ-Hero/desktop-hero-img.png"
-          alt="lptp"
+          alt="laptop"
         />
       </div>
     </div>
