@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "MuotoWeb","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.signin{
+  display: block;
+  align-items: center;
+  color: rgb(180, 179, 179);
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Divider } from "@chakra-ui/react";
 
 const NavbarMain = () => {
   return (
@@ -8,13 +9,16 @@ const NavbarMain = () => {
         <Link to="/"> HarvestLogo </Link>
       </div>
       <div>
+        <Divider orientation="vertical" />
+      </div>
+      <div>
         <Link to="/features"> Features </Link>
         <Link to="/customers"> Customers </Link>
         <Link to="/integration"> Integration </Link>
         <Link to="/pricing"> Pricing </Link>
       </div>
       <div>
-        <button> SignIn </button>
+        <Link to="/signin"> SignIn </Link>
         <button> Try Harvest for Free </button>
       </div>
     </div>
