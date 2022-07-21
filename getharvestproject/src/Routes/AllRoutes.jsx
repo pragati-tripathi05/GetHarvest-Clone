@@ -6,6 +6,7 @@ import HomePage from "../Pages/HomePage";
 import Integration from "../Pages/Integration";
 import Pricing from "../Pages/Pricing";
 import SignIn from "../Pages/SignIn";
+import SignUp from "../Pages/SignUp";
 
 const AllRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AllRoutes = () => {
         <Route path="/integration" element={<Integration />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     </div>
   );

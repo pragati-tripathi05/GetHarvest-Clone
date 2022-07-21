@@ -71,6 +71,7 @@ const SignIn = () => {
                 w="100%"
                 bg="white"
                 p={5}
+                border="2px solid red"
                 borderRadius="10px"
               >
                 <Flex direction="row">
@@ -91,7 +92,7 @@ const SignIn = () => {
             </Box>
             <br />
             <Flex>
-              <Divider w="32%" />
+              <Divider w="32%" color="gray" />
               <Center marginTop="-2.5%">or with your email below</Center>
               <Divider w="32%" />
             </Flex>
@@ -101,12 +102,14 @@ const SignIn = () => {
                 outline="1px solid gray"
                 placeholder="Work email"
                 size="lg"
+                type="email"
               />
               <br />
               <br />
               <Input
                 outline="1px solid gray"
                 placeholder="Password"
+                type="password"
                 size="lg"
               />
             </Box>
@@ -114,17 +117,24 @@ const SignIn = () => {
             <br />
             <Box>
               <Button
-                bg="#188433"
+                bg="#2e8a45"
                 color="white"
                 w="100%"
                 p={5}
                 borderRadius="10px"
                 fontSize="20px"
+                _hover={{ bg: "#188433" }}
               >
                 Sign in
               </Button>
             </Box>
           </Box>
+          <br />
+          <Flex gap="2rem" color="#777571" alignItems="center">
+            <Box marginLeft="8rem"> Forgot Password? </Box>
+            <Box> Terms of Service </Box>
+            <Box> Legal </Box>
+          </Flex>
         </Flex>
       </Center>
     </>
