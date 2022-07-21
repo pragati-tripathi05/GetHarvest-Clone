@@ -5,6 +5,7 @@ import Features from "../Pages/Features";
 import HomePage from "../Pages/HomePage";
 import Integration from "../Pages/Integration";
 import Pricing from "../Pages/Pricing";
+import SignIn from "../Pages/SignIn";
 
 const AllRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AllRoutes = () => {
         <Route path="/customers" element={<Customers />} />
         <Route path="/integration" element={<Integration />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </div>
   );
