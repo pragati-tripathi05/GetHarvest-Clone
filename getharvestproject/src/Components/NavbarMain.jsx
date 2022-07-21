@@ -19,7 +19,9 @@ const NavbarMain = () => {
       </div>
       <div>
         <Link to="/signin"> SignIn </Link>
-        <button> Try Harvest for Free </button>
+        <Link to="/signup">
+          <button> Try Harvest for Free </button>
+        </Link>
       </div>
     </div>
   );
