@@ -5,7 +5,7 @@ const NavbarMain = () => {
   return (
     <div style={{ display: "flex", justifyContent: "space-around" }}>
       <div>
-        <Link to="/"> Logo </Link>
+        <Link to="/"> HarvestLogo </Link>
       </div>
       <div>
         <Link to="/features"> Features </Link>
