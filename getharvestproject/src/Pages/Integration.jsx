@@ -1,11 +1,14 @@
+import { Heading } from "@chakra-ui/react";
 import React from "react";
+import Footer from "../Components/Footer";
 import NavbarMain from "../Components/NavbarMain";
 
 const Integration = () => {
   return (
     <div>
       <NavbarMain />
-      Integration
+      <Heading>Integration</Heading>
+      <Footer />
     </div>
   );
 };

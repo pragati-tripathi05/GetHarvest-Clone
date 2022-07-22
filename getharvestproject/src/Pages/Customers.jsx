@@ -1,11 +1,14 @@
+import { Heading } from "@chakra-ui/react";
 import React from "react";
+import Footer from "../Components/Footer";
 import NavbarMain from "../Components/NavbarMain";
 
 const Customers = () => {
   return (
     <div>
       <NavbarMain />
-      Customers
+      <Heading>Customers</Heading>
+      <Footer />
     </div>
   );
 };
