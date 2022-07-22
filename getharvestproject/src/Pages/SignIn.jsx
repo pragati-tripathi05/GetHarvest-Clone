@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 
 import {
@@ -14,11 +15,11 @@ import {
 const SignIn = () => {
   return (
     <>
-      <Center>
+      <Center padding="4%">
         <Flex direction="column">
           <Box>
             <Center>
-              <div className="signin">
+              <NavLink to="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="128"
@@ -52,7 +53,7 @@ const SignIn = () => {
                     d="M27.6 64V40.6h8a4 4 0 0 0 3.8-4V24.7H27.6a4 4 0 0 0-4 4V64h4ZM51.3 1h-3.9v15.8a4 4 0 0 0-4 3.9V64h4a4 4 0 0 0 3.9-4V1ZM15.8 64h-4V5a3.9 3.9 0 0 1 4-3.9h4v43.3a4 4 0 0 1-4 4V64Z"
                   ></path>
                 </svg>
-              </div>
+              </NavLink>
             </Center>
           </Box>
           <br />
@@ -63,7 +64,7 @@ const SignIn = () => {
           <br />
 
           {/* Outermost orange line box */}
-          <Box bg="#fff8f1" border="2px solid orange" w="80vh" p={10} h={400}>
+          <Box bg="#fff8f1" border="2px solid #fa5d00" w="80vh" p={10} h={400}>
             <Box>
               <Button
                 colorScheme="gray"
