@@ -1,5 +1,6 @@
 import { Container } from "@chakra-ui/react";
 import React from "react";
+import Footer from "../Components/Footer";
 import NavbarMain from "../Components/NavbarMain";
 
 const HomePage = () => {
@@ -23,6 +24,7 @@ const HomePage = () => {
           </div>
         </div>
       </Container>
+      <Footer />
     </>
   );
 };

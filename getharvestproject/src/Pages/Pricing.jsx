@@ -341,7 +341,7 @@ const Pricing = () => {
         </Flex>
         <Divider w="100%" borderColor="#fa5d00" />
         <br />
-
+        <br />
         <Flex gap="2rem">
           <Box borderRadius="30px 0px 30px 0" w="80vh" h={400} bgClip="img">
             <Image
@@ -377,6 +377,7 @@ const Pricing = () => {
                 />
               </Box>
             </Heading>
+            <br />
             <br />
             <br />
             <Box>
