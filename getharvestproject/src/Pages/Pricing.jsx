@@ -17,6 +17,7 @@ import {
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../Components/Footer";
+import NavbarMain from "../Components/NavbarMain";
 
 const Pricing = () => {
   const activeStyle = {
@@ -30,6 +31,7 @@ const Pricing = () => {
   };
   return (
     <>
+      <NavbarMain />
       <Container bgColor="#fff8f1" maxW="100%" h="auto" p="5% 6% 5% 6%">
         <br />
         <Box>

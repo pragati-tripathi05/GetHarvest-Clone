@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import {
   ChakraProvider,
   FormControl,
@@ -17,6 +18,7 @@ import {
 const activeLabelStyles = {
   transform: "scale(0.85) translateY(-24px)",
 };
+
 export const theme = extendTheme({
   components: {
     Form: {
@@ -77,7 +79,7 @@ export default function SignUp() {
           >
             <Box p={10}>
               <Center>
-                <div className="signin">
+                <NavLink to="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="128"
@@ -111,7 +113,7 @@ export default function SignUp() {
                       d="M27.6 64V40.6h8a4 4 0 0 0 3.8-4V24.7H27.6a4 4 0 0 0-4 4V64h4ZM51.3 1h-3.9v15.8a4 4 0 0 0-4 3.9V64h4a4 4 0 0 0 3.9-4V1ZM15.8 64h-4V5a3.9 3.9 0 0 1 4-3.9h4v43.3a4 4 0 0 1-4 4V64Z"
                     ></path>
                   </svg>
-                </div>
+                </NavLink>
               </Center>
             </Box>
             <br />
