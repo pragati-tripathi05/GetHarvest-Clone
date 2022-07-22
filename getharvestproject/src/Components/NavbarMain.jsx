@@ -1,27 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Divider } from "@chakra-ui/react";
 
 const NavbarMain = () => {
   return (
     <div style={{ display: "flex", justifyContent: "space-around" }}>
       <div>
-        <Link to="/"> HarvestLogo </Link>
+        <NavLink to="/"> HarvestLogo </NavLink>
       </div>
       <div>
         <Divider orientation="vertical" />
       </div>
       <div>
-        <Link to="/features"> Features </Link>
-        <Link to="/customers"> Customers </Link>
-        <Link to="/integration"> Integration </Link>
-        <Link to="/pricing"> Pricing </Link>
+        <NavLink to="/features"> Features </NavLink>
+        <NavLink to="/customers"> Customers </NavLink>
+        <NavLink to="/integration"> Integration </NavLink>
+        <NavLink to="/pricing"> Pricing </NavLink>
       </div>
       <div>
-        <Link to="/signin"> SignIn </Link>
-        <Link to="/signup">
+        <NavLink to="/signin"> SignIn </NavLink>
+        <NavLink to="/signup">
           <button> Try Harvest for Free </button>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
