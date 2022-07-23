@@ -7,6 +7,7 @@ import {
   Text,
   Divider,
 } from "@chakra-ui/react";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../Components/Footer";
@@ -261,8 +262,8 @@ const HomePage = () => {
           <Divider w="100%" borderColor="#fa5d00" h={5} />
         </Box>
 
-        {/* -----------------------------Section 3------------------------- */}
-        <Box padding="5% 0%">
+        {/* -----------------------------Section 3 - Features------------------------- */}
+        <Box padding="5% 3% 0% 3%">
           <Box
             fontSize="22px"
             textAlign="left"
@@ -293,8 +294,500 @@ const HomePage = () => {
           >
             Time tracking software that helps you keep time and get insights.
           </Box>
-          <Flex></Flex>
+          <Flex justifyContent="space-between" paddingTop="5%">
+            <Box w="40%" textAlign="left">
+              <Flex direction="column" gap="3rem">
+                <Box
+                  border="2px solid #fa5d00"
+                  w="95%"
+                  p={10}
+                  h={40}
+                  borderRadius="30px"
+                  _hover={{
+                    color: "#fa5d00",
+                    bgColor: "#fff0e5",
+                    cursor: "pointer",
+                  }}
+                >
+                  <Flex gap="1rem" padding="1%">
+                    <Box>
+                      <img
+                        width="80"
+                        src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-time.svg"
+                        alt=""
+                      />
+                    </Box>
+                    <Box>
+                      <Flex direction="column">
+                        <Box>
+                          <Heading size="lg" fontWeight="medium">
+                            Time tracking
+                          </Heading>
+                        </Box>
+                        <Box>
+                          <Text
+                            fontFamily="MuotoWeb,sans-serif, Monarch"
+                            fontSize="18px"
+                            color="#1d1e1c"
+                            textAlign="left"
+                            _hover={{
+                              color: "#fa5d00",
+                            }}
+                          >
+                            Simple and intuitive time tracking your team will
+                            love.
+                          </Text>
+                        </Box>
+                      </Flex>
+                    </Box>
+                  </Flex>
+                </Box>
+                <Box
+                  border="2px solid #fa5d00"
+                  w="95%"
+                  p={10}
+                  h={40}
+                  borderRadius="30px"
+                  _hover={{
+                    color: "#fa5d00",
+                    bgColor: "#fff0e5",
+                    cursor: "pointer",
+                  }}
+                >
+                  <Flex gap="1rem" padding="1%">
+                    <Box>
+                      <img
+                        class="nav-icon"
+                        width="80"
+                        src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-reporting.svg"
+                        alt=""
+                      />
+                    </Box>
+                    <Box>
+                      <Flex direction="column">
+                        <Box>
+                          <Heading size="lg" fontWeight="medium">
+                            Reports & analysis
+                          </Heading>
+                        </Box>
+                        <Box>
+                          <Text
+                            fontFamily="MuotoWeb,sans-serif, Monarch"
+                            fontSize="18px"
+                            color="#1d1e1c"
+                            textAlign="left"
+                            _hover={{
+                              color: "#fa5d00",
+                            }}
+                          >
+                            Unlock the insights that help your business thrive.
+                          </Text>
+                        </Box>
+                      </Flex>
+                    </Box>
+                  </Flex>
+                </Box>
+                <Box
+                  border="2px solid #fa5d00"
+                  w="95%"
+                  p={10}
+                  h={40}
+                  borderRadius="30px"
+                  _hover={{
+                    color: "#fa5d00",
+                    bgColor: "#fff0e5",
+                    cursor: "pointer",
+                  }}
+                >
+                  <Flex gap="1rem" padding="1%">
+                    <Box>
+                      <img
+                        class="nav-icon"
+                        width="80"
+                        src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-invoicing.svg"
+                        alt=""
+                      />
+                    </Box>
+                    <Box>
+                      <Flex direction="column">
+                        <Box>
+                          <Heading size="lg" fontWeight="medium">
+                            Invoicing & payments
+                          </Heading>
+                        </Box>
+                        <Box>
+                          <Text
+                            fontFamily="MuotoWeb,sans-serif, Monarch"
+                            fontSize="18px"
+                            color="#1d1e1c"
+                            textAlign="left"
+                            _hover={{
+                              color: "#fa5d00",
+                            }}
+                          >
+                            Seamless invoicing and fast online payments.
+                          </Text>
+                        </Box>
+                      </Flex>
+                    </Box>
+                  </Flex>
+                </Box>
+              </Flex>
+            </Box>
+            <Box w="65%" paddingTop="3%">
+              <img
+                width="100%"
+                height="100%"
+                src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/1001-Harvest-Home-SPZ-Hero/desktop-hero-img.png"
+                alt="laptop"
+              />
+            </Box>
+          </Flex>
+          <Box textAlign="left" paddingTop="5%" paddingBottom="8%">
+            <NavLink to="/features">
+              <Button
+                bgColor="#1d1e1c"
+                color="white"
+                padding="2%"
+                borderRadius="15px"
+                fontSize="22px"
+                _hover={{ bg: "#1c2938" }}
+              >
+                Discover all features
+              </Button>
+            </NavLink>
+          </Box>
           <Divider w="100%" borderColor="#fa5d00" h={5} />
+        </Box>
+
+        {/* ---------------------Section 4- Integration---------------------- */}
+        <Box>
+          <Box padding="4% 2%">
+            <Flex>
+              <Box w="45%" paddingTop="2%">
+                <img
+                  width="100%"
+                  alt="snapping fingers"
+                  src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illustrations/integrations-home.svg"
+                />
+              </Box>
+              <Box
+                w="55%"
+                p={10}
+                h={470}
+                bgImage="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-center-top.png"
+                bgRepeat="no-repeat"
+                bgSize="100%"
+                marginTop="-4.2%"
+              >
+                <Box paddingTop="4%" w="100%">
+                  <Flex direction="column">
+                    <Box
+                      fontSize="22px"
+                      textAlign="left"
+                      fontWeight="bold"
+                      color="#fa5d00"
+                      paddingTop="7%"
+                    >
+                      INTEGRATIONS
+                    </Box>
+
+                    <Box>
+                      <Heading
+                        pt={5}
+                        fontWeight="light"
+                        size="2xl"
+                        color="#1d1e1c"
+                        textAlign="left"
+                        fontFamily="MuotoWeb,sans-serif, Monarch"
+                      >
+                        Integrated with the tools your team already knows and
+                        loves
+                      </Heading>
+                    </Box>
+                    <br />
+                    <Box
+                      fontFamily="MuotoWeb,sans-serif, Monarch"
+                      fontSize="30px"
+                      color="#1d1e1c"
+                      textAlign="left"
+                    >
+                      Your favorite apps work seamlessly with Harvest so you can
+                      keep projects on track however you work.
+                    </Box>
+                  </Flex>
+                  <Box textAlign="left" paddingTop="5%" paddingBottom="8%">
+                    <NavLink to="/integration">
+                      <Button
+                        bgColor="#1d1e1c"
+                        color="white"
+                        padding="5%"
+                        borderRadius="15px"
+                        fontSize="22px"
+                        _hover={{ bg: "#1c2938" }}
+                      >
+                        Browse integrations
+                      </Button>
+                    </NavLink>
+                  </Box>
+                </Box>
+              </Box>
+            </Flex>
+          </Box>
+          <Divider w="100%" borderColor="#fa5d00" h={5} />
+        </Box>
+
+        {/* ------------------------Section 5- Customer Stories----------------------- */}
+        <Box padding="3% 0% 0% 0%">
+          <Flex gap="4%">
+            <Box>
+              <Divider
+                orientation="vertical"
+                borderColor="#fa5d00"
+                height="390px"
+              />
+            </Box>
+            <Box
+              w="50%"
+              h={400}
+              bgImage="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-vertical-small.jpg"
+              bgRepeat="no-repeat"
+              bgSize="100%"
+            >
+              <Heading
+                fontWeight="simple"
+                size="xl"
+                color="#1d1e1c"
+                textAlign="left"
+              >
+                <br />
+                <Box>
+                  <img
+                    alt="quote"
+                    src="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/quote-open.svg"
+                  />
+                </Box>
+
+                <Box marginTop="-4%" marginLeft="5%">
+                  We really focus on work-life balance in remote work… Time
+                  tracking reveals if somebody is overburdened and that becomes
+                  an immediate conversation.
+                </Box>
+                <Box marginTop="-6%" marginLeft="40%">
+                  <img
+                    alt="quote"
+                    src="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/quote-open.svg"
+                  />
+                </Box>
+              </Heading>
+              <br />
+              <br />
+              <br />
+              <Box>
+                <Text fontSize="20px" textAlign="left" marginLeft="5%">
+                  <b> Noah Gedrich, Zehner</b>
+                </Text>
+              </Box>
+
+              {/* Toggling images
+             <Box></Box> */}
+            </Box>
+            <Divider
+              orientation="vertical"
+              borderColor="#fa5d00"
+              height="370px"
+            />
+            <Box w="45%">
+              <img
+                src="https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=560&amp;height=374&amp;name=home-photo-zehner.jpg"
+                width="560"
+                height="370"
+                alt="Zehner"
+                title="Zehner"
+                srcset="https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=280&amp;height=187&amp;name=home-photo-zehner.jpg 280w, https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=560&amp;height=374&amp;name=home-photo-zehner.jpg 560w, https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=840&amp;height=561&amp;name=home-photo-zehner.jpg 840w, https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=1120&amp;height=748&amp;name=home-photo-zehner.jpg 1120w, https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=1400&amp;height=935&amp;name=home-photo-zehner.jpg 1400w, https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=1680&amp;height=1122&amp;name=home-photo-zehner.jpg 1680w"
+                sizes="(max-width: 560px) 100vw, 560px"
+              />
+            </Box>
+            <Divider
+              orientation="vertical"
+              borderColor="#fa5d00"
+              height="370px"
+            />
+          </Flex>
+          <Box textAlign="left" paddingTop="5%" paddingBottom="8%">
+            <NavLink to="/customers">
+              <Button
+                bgColor="#1d1e1c"
+                color="white"
+                padding="2%"
+                borderRadius="15px"
+                fontSize="22px"
+                _hover={{ bg: "#1c2938" }}
+              >
+                Meet our customers
+              </Button>
+            </NavLink>
+          </Box>
+
+          <Divider w="100%" borderColor="#fa5d00" h={2} />
+        </Box>
+
+        {/* --------------------------Section 6- Learning Resources------------------------- */}
+        <Box
+          paddingTop="5%"
+          bgImage="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-bottom-blur.jpg"
+          bgRepeat="no-repeat"
+          bgSize="150%"
+          width="100%"
+        >
+          <Box>
+            <Flex>
+              <Box w="45%" padding="5%">
+                <Box
+                  fontSize="22px"
+                  textAlign="left"
+                  fontWeight="bold"
+                  color="#fa5d00"
+                  paddingTop="7%"
+                >
+                  LEARNING RESOURCES
+                </Box>
+                <Box>
+                  <Heading
+                    pt={5}
+                    fontWeight="light"
+                    size="2xl"
+                    color="#1d1e1c"
+                    textAlign="left"
+                    fontFamily="MuotoWeb,sans-serif, Monarch"
+                  >
+                    Supporting your team along the way
+                  </Heading>
+                </Box>
+              </Box>
+
+              <Box w="55%" paddingLeft="3%">
+                <Divider w="90%" borderColor="#fa5d00" h={8} />
+                <Box
+                  padding="4% 0%"
+                  _hover={{
+                    color: "#fa5d00",
+                    bgColor: "#fff0e5",
+                    cursor: "pointer",
+                    width: "90%",
+                  }}
+                >
+                  <Flex gap="2rem">
+                    <Box marginLeft="4%">
+                      <img
+                        height="75"
+                        src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-folder.svg"
+                        alt=""
+                      />
+                    </Box>
+                    <Box w="60%" textAlign="left">
+                      <Flex direction="column">
+                        <Box>
+                          <Heading size="lg" fontWeight="medium">
+                            Guides and templates
+                          </Heading>
+                        </Box>
+                        <Box>
+                          <Text>
+                            Learn how to introduce your team to time tracking
+                            and make the most of Harvest.
+                          </Text>
+                        </Box>
+                      </Flex>
+                    </Box>
+                    <Box>
+                      <ArrowForwardIcon color="#fa5d00" fontSize="200%" />
+                    </Box>
+                  </Flex>
+                </Box>
+                <Divider w="90%" borderColor="#fa5d00" />
+                <Box
+                  padding="4% 0%"
+                  _hover={{
+                    color: "#fa5d00",
+                    bgColor: "#fff0e5",
+                    cursor: "pointer",
+                    width: "90%",
+                  }}
+                >
+                  <Flex gap="2rem">
+                    <Box marginLeft="4%">
+                      <img
+                        height="75"
+                        src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-laptop.svg"
+                        alt=""
+                      />
+                    </Box>
+                    <Box w="60%" textAlign="left">
+                      <Flex direction="column">
+                        <Box>
+                          <Heading size="lg" fontWeight="medium">
+                            Webinars
+                          </Heading>
+                        </Box>
+                        <Box>
+                          <Text>
+                            Watch a quick intro to Harvest or sign up for a live
+                            session with one of our Experts.
+                          </Text>
+                        </Box>
+                      </Flex>
+                    </Box>
+                    <Box>
+                      <ArrowForwardIcon color="#fa5d00" fontSize="200%" />
+                    </Box>
+                  </Flex>
+                </Box>
+                <Divider w="90%" borderColor="#fa5d00" />
+                <Box
+                  padding="4% 0%"
+                  _hover={{
+                    color: "#fa5d00",
+                    bgColor: "#fff0e5",
+                    cursor: "pointer",
+                    width: "90%",
+                  }}
+                >
+                  <Flex gap="2rem">
+                    <Box marginLeft="4%">
+                      <img
+                        height="75"
+                        src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-help.svg"
+                        alt=""
+                      />
+                    </Box>
+                    <Box w="60%" textAlign="left">
+                      <Flex direction="column">
+                        <Box>
+                          <Heading size="lg" fontWeight="medium">
+                            Help Center
+                          </Heading>
+                        </Box>
+                        <Box>
+                          <Text>
+                            Find the answers to al your questions or get in
+                            touch with one of our friendly Experts.
+                          </Text>
+                        </Box>
+                      </Flex>
+                    </Box>
+                    <Box>
+                      <ArrowForwardIcon color="#fa5d00" fontSize="200%" />
+                    </Box>
+                  </Flex>
+                </Box>
+                <br />
+                <br />
+              </Box>
+            </Flex>
+            <br />
+            <Divider w="100%" borderColor="#fa5d00" />
+          </Box>
         </Box>
 
         {/* -----------------------------Last section-------------------------- */}
@@ -351,6 +844,8 @@ const HomePage = () => {
         <br />
         <br />
       </Container>
+
+      {/* --------------------------------Footer------------------------------- */}
       <Footer />
     </>
   );
