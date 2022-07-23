@@ -1,13 +1,13 @@
 import React from "react";
 import NavbarInside from "../../Components/NavbarInside";
 
-const Expenses = () => {
+const Home = () => {
   return (
     <div>
       <NavbarInside />
-      Expenses
+      Home
     </div>
   );
 };
 
-export default Expenses;
+export default Home;

@@ -117,17 +117,19 @@ const SignIn = () => {
             <br />
             <br />
             <Box>
-              <Button
-                bg="#2e8a45"
-                color="white"
-                w="100%"
-                p={5}
-                borderRadius="10px"
-                fontSize="20px"
-                _hover={{ bg: "#188433" }}
-              >
-                Sign in
-              </Button>
+              <NavLink to="/time">
+                <Button
+                  bg="#2e8a45"
+                  color="white"
+                  w="100%"
+                  p={5}
+                  borderRadius="10px"
+                  fontSize="20px"
+                  _hover={{ bg: "#188433" }}
+                >
+                  Sign in
+                </Button>
+              </NavLink>
             </Box>
           </Box>
           <br />
