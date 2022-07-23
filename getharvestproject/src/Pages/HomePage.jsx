@@ -300,7 +300,7 @@ const HomePage = () => {
                 <Box
                   border="2px solid #fa5d00"
                   w="95%"
-                  p={10}
+                  p={6}
                   h={40}
                   borderRadius="30px"
                   _hover={{
@@ -345,7 +345,7 @@ const HomePage = () => {
                 <Box
                   border="2px solid #fa5d00"
                   w="95%"
-                  p={10}
+                  p={6}
                   h={40}
                   borderRadius="30px"
                   _hover={{
@@ -390,7 +390,7 @@ const HomePage = () => {
                 <Box
                   border="2px solid #fa5d00"
                   w="95%"
-                  p={10}
+                  p={6}
                   h={40}
                   borderRadius="30px"
                   _hover={{
@@ -573,12 +573,12 @@ const HomePage = () => {
                   tracking reveals if somebody is overburdened and that becomes
                   an immediate conversation.
                 </Box>
-                <Box marginTop="-6%" marginLeft="40%">
+                {/* <Box marginTop="-6%" marginLeft="40%">
                   <img
                     alt="quote"
                     src="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/quote-open.svg"
                   />
-                </Box>
+                </Box> */}
               </Heading>
               <br />
               <br />

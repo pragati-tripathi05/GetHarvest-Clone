@@ -414,12 +414,12 @@ const Pricing = () => {
                 we don’t want to have to teach people how to use it as part of
                 onboarding.
               </Box>
-              <Box marginTop="-6%" marginLeft="48%">
+              {/* <Box marginTop="-6%" marginLeft="48%">
                 <img
                   alt="quote"
                   src="https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/icons/quote-open.svg"
                 />
-              </Box>
+              </Box> */}
             </Heading>
             <br />
             <br />
