@@ -1,8 +1,8 @@
 # **<ins>Clone of _GetHarvest</ins>_**
 
-- Deployment link : https://getharvestcynicalfrogs.vercel.app/
-- Github Repo: https://github.com/pragati-tripathi05/cynical-frogs-1119/tree/main
-- Original website : https://www.getharvest.com/
+- _Deployment link_ : https://getharvestcynicalfrogs.vercel.app/
+- _Github Repo_: https://github.com/pragati-tripathi05/cynical-frogs-1119/tree/main
+- _Original website_ : https://www.getharvest.com/
 
 ## **This is an individual React Project** built in a week from scratch for the Construct Week Project.
 
