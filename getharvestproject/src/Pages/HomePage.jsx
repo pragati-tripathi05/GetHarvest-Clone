@@ -6,7 +6,6 @@ import {
   Button,
   Text,
   Divider,
-  Center,
 } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
@@ -15,14 +14,13 @@ import NavbarMain from "../Components/NavbarMain";
 
 const HomePage = () => {
   const activeStyle = {
-    color: "#fa5d00",
-    fontSize: "25px",
-    textDecoration: "underline",
+    color: "white",
+    textDecoration: "none",
+    backgroundColor: "#fa5d00",
   };
   const style = {
-    color: "#1d1e1c",
-    textDecoration: "none",
-    fontSize: "25px",
+    color: "white",
+    backgroundColor: "#fa5d00",
   };
   return (
     <>
@@ -31,7 +29,7 @@ const HomePage = () => {
         {/* --------------------------Hero section--------------------- */}
         <Box>
           <Flex justify="space-between">
-            <Box w="45%" padding="0% 2% 1% 0%" textAlign="left">
+            <Box w="49%" padding="0% 2% 1% 0%" textAlign="left">
               <Box>
                 <Box w="80%">
                   <Flex gap="1rem">
@@ -55,15 +53,17 @@ const HomePage = () => {
               </Box>
               <br />
               <br />
-              <Heading
-                fontWeight="simple"
-                size="3xl"
-                color="#1d1e1c"
-                textAlign="left"
-                fontFamily="Monarch"
-              >
-                Finally, time tracking your team actually wants to use{" "}
-              </Heading>
+              <Box w="110%">
+                <Heading
+                  fontWeight="simple"
+                  size="3xl"
+                  color="#1d1e1c"
+                  textAlign="left"
+                  fontFamily="Georgia, MuotoWeb,sans-serif, Monarch"
+                >
+                  Finally, time tracking your team actually wants to use
+                </Heading>
+              </Box>
 
               <br />
               <Flex direction="column" gap="1.5rem">
@@ -162,9 +162,10 @@ const HomePage = () => {
               </Flex>
             </Box>
 
-            <Box w="70%" marginRight="-1%">
+            <Box w="75%" marginRight="-1%" height="650px" paddingTop="5%">
               <img
                 width="100%"
+                height="100%"
                 src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/1001-Harvest-Home-SPZ-Hero/desktop-hero-img.png"
                 alt="laptop"
               />
@@ -259,6 +260,96 @@ const HomePage = () => {
           </Flex>
           <Divider w="100%" borderColor="#fa5d00" h={5} />
         </Box>
+
+        {/* -----------------------------Section 3------------------------- */}
+        <Box padding="5% 0%">
+          <Box
+            fontSize="22px"
+            textAlign="left"
+            fontWeight="bold"
+            color="#fa5d00"
+          >
+            FEATURES
+          </Box>
+
+          <Box>
+            <Heading
+              pt={5}
+              fontWeight="light"
+              size="2xl"
+              color="#1d1e1c"
+              textAlign="left"
+              fontFamily="MuotoWeb,sans-serif, Monarch"
+            >
+              Everything you need to keep your team ticking
+            </Heading>
+          </Box>
+          <br />
+          <Box
+            fontFamily="MuotoWeb,sans-serif, Monarch"
+            fontSize="30px"
+            color="#1d1e1c"
+            textAlign="left"
+          >
+            Time tracking software that helps you keep time and get insights.
+          </Box>
+          <Flex></Flex>
+          <Divider w="100%" borderColor="#fa5d00" h={5} />
+        </Box>
+
+        {/* -----------------------------Last section-------------------------- */}
+        <Box padding="5% 0%">
+          <Flex gap="4rem">
+            <Box w="55%" textAlign="left">
+              <Heading
+                fontWeight="simple"
+                size="2xl"
+                color="#1d1e1c"
+                textAlign="left"
+              >
+                Start tracking time today
+              </Heading>
+              <br />
+              <Text fontSize="20px">
+                Join 70,000+ companies spending their time wisely with harvest
+              </Text>
+              <br />
+              <br />
+              <Flex gap="2.5rem">
+                <Box>
+                  <NavLink
+                    style={({ isActive }) => (isActive ? activeStyle : style)}
+                    to="/signup"
+                  >
+                    <Button
+                      bgColor="#fa5d00"
+                      color="white"
+                      padding="7%"
+                      borderRadius="15px"
+                      fontSize="20px"
+                      _hover={{ bg: "#fa5d00" }}
+                    >
+                      Try Harvest for free
+                    </Button>
+                  </NavLink>
+                </Box>
+                <Box>
+                  <Text fontSize="20px" color="#777571">
+                    Free 30-day trial. No credit card required.
+                  </Text>
+                </Box>
+              </Flex>
+            </Box>
+            <Box w="40%">
+              <img
+                alt="compimg"
+                src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg"
+              />
+            </Box>
+          </Flex>
+        </Box>
+        <br />
+        <br />
       </Container>
       <Footer />
     </>

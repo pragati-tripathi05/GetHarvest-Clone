@@ -720,7 +720,7 @@ const Pricing = () => {
         <Divider w="100%" borderColor="#fa5d00" />
 
         {/* ------------------------------Last block------------------------ */}
-        <Flex gap="2rem" marginTop="10%">
+        <Flex gap="2rem" marginTop="8%" padding="4% 0%">
           <Box w="55%" textAlign="left">
             <Heading
               fontWeight="simple"
@@ -768,9 +768,6 @@ const Pricing = () => {
             />
           </Box>
         </Flex>
-        <br />
-        <br />
-        <br />
       </Container>
       <Footer />
     </>
