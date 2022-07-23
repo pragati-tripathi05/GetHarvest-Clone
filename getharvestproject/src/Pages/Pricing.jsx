@@ -140,17 +140,19 @@ const Pricing = () => {
             </Flex>
             <br />
             <Box>
-              <Button
-                bg="#2e8a45"
-                color="white"
-                w="100%"
-                p={5}
-                borderRadius="10px"
-                fontSize="18px"
-                _hover={{ color: "#188433", bgColor: "#edf2f7" }}
-              >
-                Sign up with email
-              </Button>
+              <NavLink to="/signup">
+                <Button
+                  bg="#2e8a45"
+                  color="white"
+                  w="100%"
+                  p={5}
+                  borderRadius="10px"
+                  fontSize="18px"
+                  _hover={{ color: "#188433", bgColor: "#edf2f7" }}
+                >
+                  Sign up with email
+                </Button>
+              </NavLink>
             </Box>
             <br />
             <Text fontSize="18px" color="#777571">
@@ -238,17 +240,19 @@ const Pricing = () => {
             </Flex>
             <br />
             <Box>
-              <Button
-                bg="#2e8a45"
-                color="white"
-                w="100%"
-                p={5}
-                borderRadius="10px"
-                fontSize="18px"
-                _hover={{ color: "#188433", bgColor: "#edf2f7" }}
-              >
-                Sign up with email
-              </Button>
+              <NavLink to="/signup">
+                <Button
+                  bg="#2e8a45"
+                  color="white"
+                  w="100%"
+                  p={5}
+                  borderRadius="10px"
+                  fontSize="18px"
+                  _hover={{ color: "#188433", bgColor: "#edf2f7" }}
+                >
+                  Sign up with email
+                </Button>
+              </NavLink>
             </Box>
             <br />
             <Text fontSize="18px" color="#777571">
