@@ -1,4 +1,5 @@
 import React from "react";
+import FooterInside from "../../Components/FooterInside";
 import NavbarInside from "../../Components/NavbarInside";
 
 const Manage = () => {
@@ -6,6 +7,7 @@ const Manage = () => {
     <div>
       <NavbarInside />
       Manage
+      <FooterInside />
     </div>
   );
 };

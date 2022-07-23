@@ -106,7 +106,7 @@ const NavbarInside = () => {
               marginTop="10px"
             >
               <Box>Settings</Box>
-              <Box>Id</Box>
+              <Box>User </Box>
             </Flex>
           </Box>
         </Flex>
