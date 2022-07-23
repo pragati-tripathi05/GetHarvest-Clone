@@ -4,7 +4,7 @@
 - _Github Repo_: https://github.com/pragati-tripathi05/cynical-frogs-1119/tree/main
 - _Original website_ : https://www.getharvest.com/
 
-## **This is an individual React Project** built in a week from scratch for the Construct Week Project.
+## **This is an individual React Project** built in the Construct Week from scratch.
 
 ## _Github_ : https://github.com/pragati-tripathi05
 
