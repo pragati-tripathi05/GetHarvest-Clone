@@ -35,7 +35,7 @@
 
 - `HomePage` : contains brief information about all the pages
 - `Pricing Page` : contains details about two types of pricing (a toggle button to see the price changes)
-- `Sign up Page` : whose data gets stored in a userData.json file
+- `Sign up Page` 
 - `Sign in Page`
 - `Time` : contains timesheet and some other tabs to keep track of projects, deadlines, approvals, etc.
 
