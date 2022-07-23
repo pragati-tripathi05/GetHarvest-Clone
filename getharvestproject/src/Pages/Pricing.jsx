@@ -15,11 +15,19 @@ import {
   AccordionIcon,
 } from "@chakra-ui/react";
 import React from "react";
+import { Switch } from "antd";
 import { NavLink } from "react-router-dom";
 import Footer from "../Components/Footer";
 import NavbarMain from "../Components/NavbarMain";
+import { useState } from "react";
 
 const Pricing = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const togglePricingOptions = () => {
+    toggle ? setToggle(false) : setToggle(true);
+  };
+
   const activeStyle = {
     color: "white",
     textDecoration: "none",
@@ -59,7 +67,15 @@ const Pricing = () => {
         <br />
 
         {/* -----------------Toggle section----------------- */}
-        <Box></Box>
+        <Box>
+          <Flex gap="1rem">
+            <Box>Pay monthly</Box>
+            <Box>
+              <Switch onClick={togglePricingOptions} />
+            </Box>
+            <Box> Pay yearly (Save 10%)</Box>
+          </Flex>
+        </Box>
         <br />
         <Flex gap="2.5rem">
           {/* left column */}
@@ -183,25 +199,49 @@ const Pricing = () => {
                   <Box fontSize="20px">Unlimited projects</Box>
                 </Flex>
               </Box>
-              <Box>
-                <Flex direction="column">
-                  <Flex>
-                    <Box fontSize="20px" marginLeft="18%">
-                      <b> $</b>
-                    </Box>
+              {toggle ? (
+                <Box>
+                  <Flex direction="column">
+                    <Flex>
+                      <Box fontSize="20px" marginLeft="18%">
+                        <b> $</b>
+                      </Box>
+
+                      <Box>
+                        <Heading fontWeight="simple" size="3xl" color="#1d1e1c">
+                          10.80
+                        </Heading>
+                      </Box>
+                    </Flex>
                     <Box>
-                      <Heading fontWeight="simple" size="3xl" color="#1d1e1c">
-                        10.80
+                      <Heading fontWeight="simple" size="md" color="#1d1e1c">
+                        per seat, per month, billed yearly
                       </Heading>
                     </Box>
                   </Flex>
-                  <Box>
-                    <Heading fontWeight="simple" size="md" color="#1d1e1c">
-                      per seat, per month, billed yearly
-                    </Heading>
-                  </Box>
-                </Flex>
-              </Box>
+                </Box>
+              ) : (
+                <Box>
+                  <Flex direction="column">
+                    <Flex>
+                      <Box fontSize="20px" marginLeft="18%">
+                        <b> $</b>
+                      </Box>
+
+                      <Box>
+                        <Heading fontWeight="simple" size="3xl" color="#1d1e1c">
+                          12
+                        </Heading>
+                      </Box>
+                    </Flex>
+                    <Box>
+                      <Heading fontWeight="simple" size="md" color="#1d1e1c">
+                        per seat per month
+                      </Heading>
+                    </Box>
+                  </Flex>
+                </Box>
+              )}
             </Flex>
             <br />
             <br />

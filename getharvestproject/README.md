@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# **<ins>Clone of _GetHarvest</ins>_**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+        Deployment link :
+        Github Repo: https://github.com/pragati-tripathi05/cynical-frogs-1119/tree/main
+        Original website : https://www.getharvest.com/
 
-## Available Scripts
+## **This is an individual React Project** built in a week from scratch for the Construct Week Project.
 
-In the project directory, you can run:
+## _Github_ : https://github.com/pragati-tripathi05
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## <ins>About GetHarvest</ins>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Harvest first began in 2006 as a tool two designers built for themselves to help their business grow. At a small web design agency in downtown New York City, Danny Wen and Shawn Liu made the tool they couldn’t find: a well-designed, innovative application to track time and invoice. They built Harvest.
 
-### `npm test`
+### Today, Harvest serves the time tracking and billing needs of thousands of customers around the world.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## <ins>Tech Stack</ins>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- JavaScript
+- React
+- HTML
+- CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## <ins>Pages and Components built</ins>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `Main Navbar` : contains the routes to various pages like original website
+- `Inside Navbar` : is available once a user signs in (this contains different routes than main navbar)
+- `Footer (main)` : is visible on main pages of website (before signin)
+- `Footer (inside)` : is visible once a user signs in
+- _Button_ (for various pages of navbars and for sign in and sign up)
 
-### `npm run eject`
+- `HomePage` : contains brief information about all the pages
+- `Pricing Page` : contains details about two types of pricing (a toggle button to see the price changes)
+- `Sign up Page` : whose data gets stored in a userData.json file
+- `Sign in Page`
+- `Time` : contains timesheet and some other tabs to keep track of projects, deadlines, approvals, etc.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Created four branches on github (apart from the `main` branch) for each day of work.**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+        Project Code : cynical-frogs-1119
+        StudentId : fw17_0323
