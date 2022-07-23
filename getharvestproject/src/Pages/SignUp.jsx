@@ -8,7 +8,6 @@ import {
   Flex,
   Button,
   Divider,
-  Link,
   Center,
   Heading,
   extendTheme,
@@ -233,7 +232,7 @@ export default function SignUp() {
                 <Flex gap="1rem">
                   <Box>Already a customer?</Box>
                   <Box>
-                    <Link to="/signin"> SignIn </Link>
+                    <NavLink to="/signin"> SignIn </NavLink>
                   </Box>
                 </Flex>
               </Center>
