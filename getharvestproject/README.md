@@ -1,6 +1,6 @@
 # **<ins>Clone of _GetHarvest</ins>_**
 
-- _Deployment link_ :
+- _Deployment link_ : https://getharvest.vercel.app/
 - _Github Repo_: https://github.com/pragati-tripathi05/cynical-frogs-1119/tree/main
 - _Original website_ : https://www.getharvest.com/
 
@@ -27,13 +27,13 @@
 
 ## <ins>Pages and Components built</ins>
 
-- `Main Navbar` : contains the routes to various pages like original website
+- `Main Navbar` : contains the routes to various pages like original website - `responsive`
 - `Inside Navbar` : is available once a user signs in (this contains different routes than main navbar)
-- `Footer (main)` : is visible on main pages of website (before signin)
+- `Footer (main)` : is visible on main pages of website (before signin) - `responsive`
 - `Footer (inside)` : is visible once a user signs in
 - _Button_ (for various pages of navbars and for sign in and sign up)
 
-- `HomePage` : contains brief information about all the pages
+- `HomePage` : contains brief information about all the pages - `responsive`
 - `Pricing Page` : contains details about two types of pricing (a toggle button to see the price changes)
 - `Sign up Page`
 - `Sign in Page`
