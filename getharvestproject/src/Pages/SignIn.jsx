@@ -1,5 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { AppContext } from "../Context/AppContext";
 import "../App.css";
 
 import {
@@ -12,7 +14,44 @@ import {
   Input,
 } from "@chakra-ui/react";
 
+// reqres email for login: eve.holt@reqres.in
+// reqres password for login: cityslicka
+
 const SignIn = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const [state, dispatch] = useContext(AppContext);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      let res = await fetch("https://reqres.in/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      });
+      res = await res.json();
+      // update auth
+      console.log(res);
+      dispatch({
+        type: "LOGIN_SUCCESS",
+        payload: {
+          token: res.token,
+        },
+      });
+      console.log("state:", state);
+      navigate("/time");
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <Center padding="4%">
@@ -98,39 +137,48 @@ const SignIn = () => {
               <Divider w="32%" />
             </Flex>
             <br />
-            <Box>
-              <Input
-                outline="1px solid gray"
-                placeholder="Work email"
-                size="lg"
-                type="email"
-              />
+            <form onSubmit={handleSubmit}>
+              <Box>
+                <Input
+                  outline="1px solid gray"
+                  placeholder="Work email"
+                  size="lg"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <br />
+                <br />
+                <Input
+                  outline="1px solid gray"
+                  placeholder="Password"
+                  type="password"
+                  size="lg"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </Box>
               <br />
               <br />
-              <Input
-                outline="1px solid gray"
-                placeholder="Password"
-                type="password"
-                size="lg"
-              />
-            </Box>
-            <br />
-            <br />
-            <Box>
-              <NavLink to="/time">
-                <Button
-                  bg="#2e8a45"
-                  color="white"
-                  w="100%"
-                  p={5}
-                  borderRadius="10px"
-                  fontSize="20px"
-                  _hover={{ bg: "#188433" }}
-                >
-                  Sign in
-                </Button>
-              </NavLink>
-            </Box>
+              <Box>
+                <NavLink to="/time">
+                  <Button
+                    bg="#2e8a45"
+                    color="white"
+                    w="100%"
+                    p={5}
+                    borderRadius="10px"
+                    fontSize="20px"
+                    _hover={{ bg: "#188433" }}
+                    type="submit"
+                    value="SUBMIT"
+                    onSubmit={handleSubmit}
+                  >
+                    Sign in
+                  </Button>
+                </NavLink>
+              </Box>
+            </form>
           </Box>
           <br />
           <Flex gap="2rem" color="#777571" alignItems="center">

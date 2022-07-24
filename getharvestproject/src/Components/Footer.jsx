@@ -6,7 +6,16 @@ const Footer = () => {
   return (
     <>
       <Container bgColor="#1d1e1c" color="white" padding="5%" maxW="100%">
-        <Flex textAlign="left" gap="5rem">
+        <Flex
+          textAlign="left"
+          gap="5rem"
+          direction={{
+            base: "row",
+            md: "column",
+            sm: "column",
+            lg: "row",
+          }}
+        >
           <NavLink to="/">
             <Box w="30%">
               <svg
@@ -71,7 +80,7 @@ const Footer = () => {
           colorScheme="darkgray"
           variant="outline"
           color="darkgray"
-          fontSize="18px"
+          fontSize={{ base: "18px", md: "12px", sm: "6px", xs: "5px" }}
           fontWeight="medium"
         >
           We also make: <b> Harvest Forecast - </b> the fast and simple way to

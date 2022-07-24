@@ -16,6 +16,7 @@ import Projects from "../Pages/InnerPages/Projects";
 import Reports from "../Pages/InnerPages/Reports";
 import Team from "../Pages/InnerPages/Team";
 import Time from "../Pages/InnerPages/Time";
+import PrivateRoute from "../Components/PrivateRoute";
 
 const AllRoutes = () => {
   return (
@@ -31,7 +32,14 @@ const AllRoutes = () => {
 
         {/* ----------------InnerRoutes------------------ */}
         <Route path="/home" element={<Home />} />
-        <Route path="/time" element={<Time />} />
+        <Route
+          path="/time"
+          element={
+            <PrivateRoute>
+              <Time />
+            </PrivateRoute>
+          }
+        />
         <Route path="/expenses" element={<Expenses />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/team" element={<Team />} />

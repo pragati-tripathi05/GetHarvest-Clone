@@ -1,6 +1,6 @@
 # **<ins>Clone of _GetHarvest</ins>_**
 
-- _Deployment link_ : https://getharvestcynicalfrogs.vercel.app/
+- _Deployment link_ :
 - _Github Repo_: https://github.com/pragati-tripathi05/cynical-frogs-1119/tree/main
 - _Original website_ : https://www.getharvest.com/
 
@@ -35,7 +35,7 @@
 
 - `HomePage` : contains brief information about all the pages
 - `Pricing Page` : contains details about two types of pricing (a toggle button to see the price changes)
-- `Sign up Page` 
+- `Sign up Page`
 - `Sign in Page`
 - `Time` : contains timesheet and some other tabs to keep track of projects, deadlines, approvals, etc.
 

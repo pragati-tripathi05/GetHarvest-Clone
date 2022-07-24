@@ -29,7 +29,15 @@ const HomePage = () => {
       <Container bgColor="#fff8f1" maxW="100%" padding="2% 1% 2% 5%">
         {/* --------------------------Hero section--------------------- */}
         <Box>
-          <Flex justify="space-between">
+          <Flex
+            justify="space-between"
+            direction={{
+              base: "row",
+              lg: "row",
+              md: "column",
+              sm: "column",
+            }}
+          >
             <Box w="49%" padding="0% 2% 1% 0%" textAlign="left">
               <Box>
                 <Box w="80%">
@@ -294,7 +302,11 @@ const HomePage = () => {
           >
             Time tracking software that helps you keep time and get insights.
           </Box>
-          <Flex justifyContent="space-between" paddingTop="5%">
+          <Flex
+            justifyContent="space-between"
+            paddingTop="5%"
+            direction={{ base: "row", md: "column", sm: "column", lg: "row" }}
+          >
             <Box w="40%" textAlign="left">
               <Flex direction="column" gap="3rem">
                 <Box
@@ -327,7 +339,12 @@ const HomePage = () => {
                         <Box>
                           <Text
                             fontFamily="MuotoWeb,sans-serif, Monarch"
-                            fontSize="18px"
+                            fontSize={{
+                              base: "18px",
+                              md: "12px",
+                              sm: "6px",
+                              xs: "5px",
+                            }}
                             color="#1d1e1c"
                             textAlign="left"
                             _hover={{
@@ -373,7 +390,12 @@ const HomePage = () => {
                         <Box>
                           <Text
                             fontFamily="MuotoWeb,sans-serif, Monarch"
-                            fontSize="18px"
+                            fontSize={{
+                              base: "18px",
+                              md: "12px",
+                              sm: "6px",
+                              xs: "5px",
+                            }}
                             color="#1d1e1c"
                             textAlign="left"
                             _hover={{
@@ -418,7 +440,12 @@ const HomePage = () => {
                         <Box>
                           <Text
                             fontFamily="MuotoWeb,sans-serif, Monarch"
-                            fontSize="18px"
+                            fontSize={{
+                              base: "18px",
+                              md: "12px",
+                              sm: "6px",
+                              xs: "5px",
+                            }}
                             color="#1d1e1c"
                             textAlign="left"
                             _hover={{
@@ -463,7 +490,9 @@ const HomePage = () => {
         {/* ---------------------Section 4- Integration---------------------- */}
         <Box>
           <Box padding="4% 2%">
-            <Flex>
+            <Flex
+              direction={{ base: "row", md: "column", sm: "column", lg: "row" }}
+            >
               <Box w="45%" paddingTop="2%">
                 <img
                   width="100%"
@@ -496,7 +525,7 @@ const HomePage = () => {
                       <Heading
                         pt={5}
                         fontWeight="light"
-                        size="2xl"
+                        size={{ base: "2xl", md: "2xl", sm: "lg" }}
                         color="#1d1e1c"
                         textAlign="left"
                         fontFamily="MuotoWeb,sans-serif, Monarch"
@@ -508,7 +537,12 @@ const HomePage = () => {
                     <br />
                     <Box
                       fontFamily="MuotoWeb,sans-serif, Monarch"
-                      fontSize="30px"
+                      fontSize={{
+                        base: "30px",
+                        md: "20px",
+                        sm: "16px",
+                        xs: "10px",
+                      }}
                       color="#1d1e1c"
                       textAlign="left"
                     >
@@ -539,7 +573,10 @@ const HomePage = () => {
 
         {/* ------------------------Section 5- Customer Stories----------------------- */}
         <Box padding="3% 0% 0% 0%">
-          <Flex gap="4%">
+          <Flex
+            gap="4%"
+            direction={{ base: "row", md: "column", sm: "column", lg: "row" }}
+          >
             <Box>
               <Divider
                 orientation="vertical"
@@ -556,7 +593,7 @@ const HomePage = () => {
             >
               <Heading
                 fontWeight="simple"
-                size="xl"
+                size={{ base: "xl", md: "lg", sm: "sm" }}
                 color="#1d1e1c"
                 textAlign="left"
               >
@@ -641,7 +678,9 @@ const HomePage = () => {
           width="100%"
         >
           <Box>
-            <Flex>
+            <Flex
+              direction={{ base: "row", md: "column", sm: "column", lg: "row" }}
+            >
               <Box w="45%" padding="5%">
                 <Box
                   fontSize="22px"

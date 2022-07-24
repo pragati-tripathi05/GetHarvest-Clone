@@ -119,8 +119,7 @@ export default function SignUp() {
             <Box>
               <Heading> Start your free 30-days trial</Heading>
             </Box>
-            <br />
-            <Box>Fullyfunctional</Box>
+
             <br />
             <Box>
               <Button

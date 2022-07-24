@@ -510,7 +510,7 @@ const Pricing = () => {
           </Box>
           <Box w="50%" paddingTop="4%">
             <Accordion allowToggle borderColor="#fa5d00">
-              <AccordionItem _hover={{ bg: "#fff0e5" }} padding="1%">
+              <AccordionItem _hover={{ bg: "#fff0e5" }}>
                 <h2>
                   <AccordionButton color="#fa5d00" fontSize="30px">
                     <Box
@@ -542,7 +542,7 @@ const Pricing = () => {
                   options.
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem _hover={{ bg: "#fff0e5" }} padding="1%">
+              <AccordionItem _hover={{ bg: "#fff0e5" }}>
                 <h2>
                   <AccordionButton color="#fa5d00" fontSize="30px">
                     <Box
@@ -580,7 +580,7 @@ const Pricing = () => {
                   .
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem _hover={{ bg: "#fff0e5" }} padding="1%">
+              <AccordionItem _hover={{ bg: "#fff0e5" }}>
                 <h2>
                   <AccordionButton color="#fa5d00" fontSize="30px">
                     <Box
@@ -615,7 +615,7 @@ const Pricing = () => {
                   , and <b>students</b>.
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem _hover={{ bg: "#fff0e5" }} padding="1%">
+              <AccordionItem _hover={{ bg: "#fff0e5" }}>
                 <h2>
                   <AccordionButton color="#fa5d00" fontSize="30px">
                     <Box
@@ -642,7 +642,7 @@ const Pricing = () => {
                   discounts could apply.
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem _hover={{ bg: "#fff0e5" }} padding="1%">
+              <AccordionItem _hover={{ bg: "#fff0e5" }}>
                 <h2>
                   <AccordionButton color="#fa5d00" fontSize="30px">
                     <Box
@@ -676,7 +676,7 @@ const Pricing = () => {
                   </p>
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem _hover={{ bg: "#fff0e5" }} padding="1%">
+              <AccordionItem _hover={{ bg: "#fff0e5" }}>
                 <h2>
                   <AccordionButton color="#fa5d00" fontSize="30px">
                     <Box
@@ -718,7 +718,7 @@ const Pricing = () => {
                   </p>
                 </AccordionPanel>
               </AccordionItem>
-              <AccordionItem _hover={{ bg: "#fff0e5" }} padding="1%">
+              <AccordionItem _hover={{ bg: "#fff0e5" }}>
                 <h2>
                   <AccordionButton color="#fa5d00" fontSize="30px">
                     <Box
